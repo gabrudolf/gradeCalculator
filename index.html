@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Profile and Grade Evaluator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>STUDENT PROFILE AND GRADE EVALUATOR</h1>
+
+    <div class="form-group">
+      <label for="studentName">Student Name:</label>
+      <input type="text" id="studentName" placeholder="Enter full name">
+    </div>
+
+    <div class="form-group">
+      <label for="studentId">Student ID:</label>
+      <input type="text" id="studentId" placeholder="Enter student ID">
+    </div>
+
+    <div class="form-group">
+      <label for="programming">Programming Grade:</label>
+      <input type="number" id="programming" min="0" max="100" placeholder="0 - 100">
+    </div>
+
+    <div class="form-group">
+      <label for="database">Database Grade:</label>
+      <input type="number" id="database" min="0" max="100" placeholder="0 - 100">
+    </div>
+
+    <div class="form-group">
+      <label for="networking">Networking Grade:</label>
+      <input type="number" id="networking" min="0" max="100" placeholder="0 - 100">
+    </div>
+
+    <div class="button-group">
+      <button id="evaluateBtn">EVALUATE STUDENT</button>
+      <button id="clearBtn">CLEAR</button>
+    </div>
+
+    <div id="output" class="output-card hidden">
+      <h2>Student Result</h2>
+      <p><strong>Name:</strong> <span id="outName"></span></p>
+      <p><strong>Student ID:</strong> <span id="outId"></span></p>
+
+      <hr>
+      <ul id="outSubjects"></ul>
+      <p><strong>Highest Grade:</strong> <span id="outHighest"></span></p>
+      <p><strong>Lowest Grade:</strong> <span id="outLowest"></span></p>
+
+      <hr>
+      <p><strong>Average:</strong> <span id="outAverage"></span></p>
+      <p><strong>Status:</strong> <span id="outStatus"></span></p>
+      <p><strong>Passed All Subjects:</strong> <span id="outPassedAll"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
